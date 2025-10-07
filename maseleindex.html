@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mazingira Estate - Kiwanja Kiluvya</title>
+<style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; line-height:1.6;}
+    header {background:#006400; color:#fff; padding:50px 20px; text-align:center;}
+    header h1 {font-size:2em; margin-bottom:15px;}
+    header p {font-size:1.2em;}
+    .cta-button {display:inline-block; background:#ffcc00; color:#000; padding:15px 30px; font-size:1.2em; text-decoration:none; margin-top:20px; border-radius:8px; transition:0.3s;}
+    .cta-button:hover {background:#e6b800;}
+    .container {max-width:900px; margin:40px auto; padding:20px; background:#fff; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); position:relative;}
+    h2 {color:#006400; margin-top:30px;}
+    ul {list-style:none; padding:0;}
+    ul li {background:url('https://cdn-icons-png.flaticon.com/512/190/190411.png') no-repeat left center; background-size:20px; padding-left:30px; margin-bottom:10px;}
+    .testimonial {background:#fff3cd; padding:20px; border-left:5px solid #ffcc00; margin:20px 0; border-radius:5px;}
+    footer {background:#333; color:#fff; padding:30px 20px; text-align:center;}
+    .highlight {color:#ff0000; font-weight:bold;}
+    .form-section {background:#f9f9f9; padding:30px; margin:30px 0; border-radius:10px;}
+    form {display:flex; flex-direction:column;}
+    form input, form button {padding:12px 15px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; font-size:1em;}
+    form button {background:#ffcc00; border:none; font-weight:bold; cursor:pointer; transition:0.3s;}
+    form button:hover {background:#e6b800;}
+    .countdown {background:#ff0000; color:#fff; padding:10px 15px; font-size:1em; text-align:center; border-radius:10px; margin:20px 0; position:relative;}
+    /* Floating badge for remaining plots */
+    .badge {
+        position:fixed;
+        top:20px;
+        right:20px;
+        background:#ff6600;
+        color:#fff;
+        padding:12px 18px;
+        border-radius:50px;
+        font-weight:bold;
+        font-size:1em;
+        display:flex;
+        align-items:center;
+        gap:8px;
+        animation: blink 1.5s infinite;
+        box-shadow: 0 0 15px rgba(255,102,0,0.7);
+        z-index:9999;
+    }
+    .badge img {width:25px; height:25px;}
+    @keyframes blink {
+        0%, 50%, 100% {opacity:1;}
+        25%, 75% {opacity:0.5;}
+    }
+    @media (max-width:600px){
+        header h1{font-size:1.5em;} 
+        header p{font-size:1em;} 
+        .countdown{font-size:0.9em; padding:8px 12px;}
+        .badge img {width:20px; height:20px;}
+        .badge{padding:8px 12px; font-size:0.9em;}
+    }
+</style>
+</head>
+<body>
+
+<header>
+<h1>BADILI KILA SHILINGI YAKO KUWA ARDHI NDANI YA SIKU 14 AU URUDISHIWE PESA YAKO… GUARANTEED!</h1>
+<p>Hatimaye, Mazingira Estate wamevunja ukimya!</p>
+<a href="#form" class="cta-button">Pata Kiwanja Sasa!</a>
+</header>
+
+<div class="container">
+
+<h2>TAFADHALI SOMA HII KABLA HUJACHELEWA…</h2>
+<p>Kama umechoshwa na kupanga miaka nenda rudi, kodi zikikukandamiza kila mwezi, ukiahidi “mwaka huu lazima nijenge” lakini bado hujapata kiwanja kitakacho faa?  
+Kama umejibu NDIYO — acha kila kitu unachofanya sasa hivi na soma ujumbe huu hadi mwisho!</p>
+
+<h2>KWANI:</h2>
+<p>Viwanja unavyokwenda kuviona ndani ya sekunde 60 zijazo vitakupa nafasi ya kumiliki ardhi haraka, bila stress, bila madalali, na kwa bei unayoweza kumudu. <br>
+NA CHA KUSHANGAZA… Huhitaji hati wala mipango migumu — tunakuongoza hatua kwa hatua hadi unapopata eneo lako, unaanza kulipia nusu bei, na unamiliki.</p>
+
+<div class="testimonial">
+<p>“Nilikuwa nimeshakatishwa tamaa na madalali wengi. Lakini Mazingira Estate walinipa kiwanja safi Kiluvya ndani ya wiki mbili tu. Leo tayari nimechimba msingi wangu. Nilihisi kama ndoto! Kumiliki kiwanja kwenye mji wenye majumba ya kifahari kama huu” – <strong>Mzee Joseph, Kimara</strong></p>
+</div>
+
+<h2>Sasa, kwa nini viwanja hivi vinauzika haraka namna hii?</h2>
+<ul>
+<li>Umbali ni mfupi – dakika 20 tu kwa pikipiki kutoka Morogoro Road</li>
+<li>Huduma zote muhimu zipo – maji, umeme, barabara za ndani</li>
+<li>Eneo ni tambarare – tayari kwa ujenzi</li>
+<li>Bei ni ndogo – kuanzia milioni 5.6 tu</li>
+<li>Unaweza kulipa kwa awamu – hadi miezi 6 bila riba</li>
+</ul>
+
+<h2>Ofa ya Leo (Masaa 24 Tu!)</h2>
+<div class="countdown" id="countdown">
+    <span>24:00:00</span>
+</div>
+<p>👉 Kiwanja cha Kiluvya (20x20) bei ya kawaida: Tsh 5,600,000<br>
+👉 Ukilipia leo utapata kwa Tsh 5,100,000 tu – unaokoa Tsh 500,000 moja kwa moja!<br>
+🎁 Ushauri wa ujenzi kutoka kwa wataalam wetu (thamani Tsh 150,000)<br>
+🎁 Nguzo nne ndefu za kuweka kwenye mipaka ya kiwanja chako<br>
+<strong>Bonasi hizi kwa wateja 20 wa kwanza tu!</strong></p>
+
+<h2>Guarantee</h2>
+<p>Ukijuta ndani ya siku 14 baada ya malipo yako ya awali, tunakurudishia hela yako yote bila kuuliza maswali yoyote.  
+Kwa hiyo una chaguo mbili tu: Aidha uendelee kupanga mwaka mwingine, au uchukue hatua sasa hivi na umiliki kiwanja Kiluvya ndani ya siku 14 zijazo!</p>
+
+<h2>Jiunge Sasa na Umiliki Kiwanja Chako</h2>
+<div class="form-section" id="form">
+<form action="#" method="POST">
+<input type="text" name="name" placeholder="Jina Lako Kamili" required>
+<input type="tel" name="phone" placeholder="Namba ya Simu / WhatsApp" required>
+<button type="submit">Pata Kiwanja Sasa!</button>
+</form>
+<p style="text-align:center; margin-top:10px;">Au piga / WhatsApp sasa: <strong>0763-545-184</strong></p>
+</div>
+
+</div>
+
+<!-- Floating badge -->
+<div class="badge" id="plots-badge">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="brick icon">
+    <span id="remaining-plots-text">Vimebaki vinne tu! Nunua sasa!</span>
+</div>
+
+<footer>
+<p>Mazingira Estate — Tunabadili Wapangaji kuwa Wamiliki.</p>
+</footer>
+
+<script>
+// Countdown timer 24h
+const countdownElement = document.getElementById('countdown');
+let endTime = new Date().getTime() + 24*60*60*1000;
+
+function updateCountdown(){
+    let now = new Date().getTime();
+    let distance = endTime - now;
+
+    if(distance > 0){
+        let hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+        let minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+        let seconds = Math.floor((distance % (1000*60)) / 1000);
+
+        countdownElement.querySelector('span').textContent = 
+            (hours<10?'0'+hours:hours) + ':' +
+            (minutes<10?'0'+minutes:minutes) + ':' +
+            (seconds<10?'0'+seconds:seconds);
+    } else {
+        countdownElement.querySelector('span').textContent = "OFA IMEMALIZIKA!";
+    }
+}
+setInterval(updateCountdown,1000);
+
+// Popup alert urgency
+setTimeout(() => {
+    alert(`Hurry! Vimebaki vinne tu! Nunua sasa!`);
+}, 2000);
+</script>
+
+</body>
+</html>
